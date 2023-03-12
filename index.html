@@ -334,6 +334,17 @@
                 </a></li>
             </ul>
 </div>
+<div>
+    <p class="description-text-subscribe">Subscribe</p>
+    <div class="modal-input">
+        <input type="email" class="modal-input-email" name="user-name" placeholder="E-mail" />
+        <button class="subscribe-input" type="button"data-modal-open>Subscribe</button>
+    
+    </div>
+</div>
+<div>
+
+</div>
         
       </div>
      
@@ -344,19 +355,36 @@
                 <use href="./image/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
              </svg>
      </button>
+     
      <p class="modal-title">Leave your contacts and we will call you back</p>
 <form class="modal-form">
-    <label><span class="input-box">Name</span> 
-    <input type="text" class="modal-input" name="user-name" placeholder="Введіть імя" /><svg class="box-icon" width="18px" height="18px">
-        <use href="./image/symbol-defs.svg#icon-Vectorfacebookf-1"></use>
-     </svg></label>
-    <label><span class="input-box">Phone</span>
-    <input type="tel" class="modal-input" name="user-email" placeholder="Введіть телефон" /></label>
-    <label><span class="input-box"> Email</span>
-    <input type="email" class="modal-input" placeholder="Введіть пошту" /></label>
+    <div class="model-field">
+        <label><span class="input-box">Name</span> 
+        <div class="input-wrap">
+            <input type="text" class="modal-input" name="user-name" placeholder="Введіть імя" /><svg class="box-icon" width="12px" height="12px">
+            <use href="./image/symbol-defs.svg#icon-user"></use>
+             </svg>
+        </div></label>
+    </div>
+    <div class="modal-field">
+        <label><span class="input-box">Phone</span>
+        <div class="input-wrap">
+            <input type="tel" class="modal-input" name="user-email" placeholder="Введіть телефон" /><svg class="box-icon" width="13px" height="13px">
+                <use href="./image/symbol-defs.svg#icon-phone"></use>
+                 </svg>
+        </div></label>
+    </div>
+    <div class="modal-field">
+        <label><span class="input-box"> Email</span>
+        <div class="input-wrap">
+            <input type="email" class="modal-input" placeholder="Введіть пошту" /><svg class="box-icon" width="15px" height="12px">
+                <use href="./image/symbol-defs.svg#icon-mail3"></use>
+                 </svg>
+        </div></label>
+    </div>
     <label><span class="input-box"> Comment</span>
     <input type="text" class="modal-input-comment" name="user-name" placeholder="Text input" required /></label>
-    <button type="submit">x</button><p class="modal-title-send">I accept the terms and conditions of the Privacy Policy</p>
+    <div class="input-checkbox"><input type="checkbox" name="" id=""><p class="modal-title-send">I accept the terms and conditions of the <a class="policy" href="">Privacy Policy</a></p></div>
     <button class="send" type="button"data-modal-open>Send</button>
 </form>
            <!--<svg class="model-close" width="8px" height="8px">
