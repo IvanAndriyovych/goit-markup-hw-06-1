@@ -1264,7 +1264,7 @@ margin-bottom: 16px;
 padding-left: 38px;
 font-size: 12px;
 border-radius: 4px;
-border: 1px solid #2E2F42;
+border: 1px solid rgba(46, 47, 66, 0.2);
 outline: none;
 
 
@@ -1290,6 +1290,7 @@ padding-left: 16px;
 opacity: 0.2;
 padding-top: 8px;
 padding-top: 16px;
+color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-input:not(:placeholder-shown):not(:focus) valid {
@@ -1306,18 +1307,29 @@ border-color: #4D5AE5;
 
 .input-checkbox {
     align-items: center;
+   
     
 }
 
 
 
 .input-checkbox::before {
-    content: '';
+    content:'';
     width: 16px;
     height: 16px;
     border: 2px solid #000000;
     border-radius: 3px;
     display: block;
+    cursor: pointer;
+}
+
+.input-checkbox-box:checked + .input-checkbox::before{
+    background-color: #404BBF;
+    border: 1px solid #404BBF;
+border-radius: 2px;
+background-image: url(../image/vectorgal/Vector.svg);
+background-repeat: no-repeat;
+background-position: center;
 }
 
 .modal-field{
@@ -1360,12 +1372,14 @@ flex-grow: 0;
  }
 
  .input-checkbox{
-    display: flex;
+  
     margin-top: 16px;
     margin-bottom: 24px;
     
    
  }
+
+
 
  .policy{
 color: #4D5AE5;
@@ -1430,6 +1444,9 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 color: #FFFFFF;
+background-image: url(../image/vectorgal/icon\ send.svg)
+
+
 
 }
 
@@ -1440,6 +1457,6 @@ color: #FFFFFF;
        
 }
 
-.send{
+.send {
     background-image: url(../image/vectorgal/);
 }
